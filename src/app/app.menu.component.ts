@@ -15,7 +15,7 @@ export class AppMenuComponent implements OnInit, AfterViewInit {
 
     model: any[];
 
-    @ViewChild('scrollPanel') layoutMenuScrollerViewChild: ScrollPanel;
+    @ViewChild('scrollPanel', { static: true }) layoutMenuScrollerViewChild: ScrollPanel;
 
     constructor(public app: AppMainComponent) {}
 
