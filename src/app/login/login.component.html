@@ -1,0 +1,45 @@
+<div [formGroup]="loginForm" class="login-body">
+  <div class="login-panel ui-fluid">
+    <div class="login-panel-header">
+      <img src="../../assets/layout/images/logo-slim.png">
+    </div>
+    <div class="login-panel-content">
+      <div class="ui-g">
+        <div class="ui-g-12">
+          <h1>Addicted to Fitness Sign-in</h1>
+        </div>
+        <div class="ui-g-12">
+          <span class="md-inputfield">
+              <input id="user"
+                     type="text"
+                     autocomplete="off"
+                     class="ui-inputtext"
+                     formControlName="username"
+                     pInputText>
+              <label>Username</label>
+          </span>
+        </div>
+        <div class="ui-g-12">
+          <span class="md-inputfield">
+              <input id="pass"
+                     type="password"
+                     autocomplete="off"
+                     class="ui-inputtext"
+                     formControlName="password"
+                     pInputText>
+              <label>Password</label>
+          </span>
+        </div>
+        <div class="ui-g-12">
+          <button type="button" class="ui-button ui-widget ui-corner-all ui-button-text-icon-left">
+            <span class="ui-button-icon-left fa ui-icon-person"></span>
+            <span class="ui-button-text" (click)="signIn()">Sign In</span>
+          </button>
+        </div>
+        <div class="ui-g-12">
+          <a href="#">Register new account</a> now.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+{
+  "environments": [
+    {
+      "name": "local-mock",
+      "endpoints": [
+        {
+          "resource": "Employee",
+          "baseUrl": "http://localhost:4300/api",
+          "url": "companies/1/consultants",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        },
+        {
+          "resource": "Contact",
+          "baseUrl": "http://localhost:4300/api",
+          "url": "contacts",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "local-dev",
+      "endpoints": [
+        {
+          "resource": "Employee",
+          "baseUrl": "https://dev-resolver-company-api.azurewebsites.net/api",
+          "url": "companies/1/consultants",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        },
+        {
+          "resource": "Contact",
+          "baseUrl": "https://dev-resolver-contact-api.azurewebsites.net/api",
+          "url": "contacts",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "production",
+      "endpoints": [
+        {
+          "resource": "Employee",
+          "baseUrl": "#{COMPANY_API_BASE_URL}#",
+          "url": "companies/1/consultants",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        },
+        {
+          "resource": "Contact",
+          "baseUrl": "#{CONTACT_API_BASE_URL}#",
+          "url": "contacts",
+          "versions": [
+            {
+              "verb": "default",
+              "value": "v1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
