@@ -1,25 +1,24 @@
 import { environment } from '../../../../environments/environment';
-import { HttpVerbs } from '../../../config/enums/http-verbs.enum';
+import { HttpVerb } from '../../../config/enums/http-verbs.enum';
 import { Endpoint } from '../../../config/models/endpoint.model';
 import { Environment } from '../../../config/models/environment.model';
-// import { ResourceConfig } from '../../../config/models/resource-config.model';
-import resourceConfig from '../../../config/resource-endpoints.json';
+import { ResourceConfig } from '../../../config/models/resource-config.model';
 
 export class ResourceUrlService {
-  private endpointConfig;
+  private resourceConfig: ResourceConfig = require('../../../config/resource-endpoints.json');
   private resourceDefaultVersionName = 'default';
 
   // Remarks: For unit testing ONLY
   public set config(config: string) {
-    this.endpointConfig = JSON.parse(config);
+    this.resourceConfig = JSON.parse(config);
   }
 
-  public resourceUrl(resource: string, verb: HttpVerbs): string {
+  public resourceUrl(resource: string, verb: HttpVerb): string {
     try {
-      const runningEnvironment = resourceConfig.environments.find((x) => x.name === environment.resourceEnvironment) as Environment;
+      const runningEnvironment = this.resourceConfig.environments.find((x) => x.name === environment.resourceEnvironment) as Environment;
       const endpointConfig = runningEnvironment.endpoints.find((x) => x.resource === resource) as Endpoint;
       const endpointVersion = endpointConfig.versions.find((x) => x.verb.toLowerCase() === verb.toLowerCase())
-        || endpointConfig.versions.find((x) => x.verb.toLowerCase() === this.resourceDefaultVersionName);
+          || endpointConfig.versions.find((x) => x.verb.toLowerCase() === this.resourceDefaultVersionName);
 
       return `${endpointConfig.baseUrl}/${endpointVersion.value}/${endpointConfig.url}`;
     } catch (exception) {
