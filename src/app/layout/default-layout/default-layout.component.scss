@@ -19,9 +19,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("../../../assets/layout/fonts/roboto-v15-latin-300.eot");
+  src: url("/../../../assets/layout/fonts/roboto-v15-latin-300.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto Light"), local("Roboto-Light"), url("../../../assets/layout/fonts/roboto-v15-latin-300.eot?#iefix") format("embedded-opentype"), url("../../../assets/layout/fonts/roboto-v15-latin-300.woff2") format("woff2"), url("../../../assets/layout/fonts/roboto-v15-latin-300.woff") format("woff"), url("../../../assets/layout/fonts/roboto-v15-latin-300.ttf") format("truetype"), url("../../../assets/layout/fonts/roboto-v15-latin-300.svg#Roboto") format("svg");
+  src: local("Roboto Light"), local("Roboto-Light"), url("/../../../assets/layout/fonts/roboto-v15-latin-300.eot?#iefix") format("embedded-opentype"), url("/../../../assets/layout/fonts/roboto-v15-latin-300.woff2") format("woff2"), url("/../../../assets/layout/fonts/roboto-v15-latin-300.woff") format("woff"), url("/../../../assets/layout/fonts/roboto-v15-latin-300.ttf") format("truetype"), url("/../../../assets/layout/fonts/roboto-v15-latin-300.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-regular - latin */
@@ -29,9 +29,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../../../assets/layout/fonts/roboto-v15-latin-regular.eot");
+  src: url("/../../../assets/layout/fonts/roboto-v15-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto"), local("Roboto-Regular"), url("../../../assets/layout/fonts/roboto-v15-latin-regular.eot#iefix") format("embedded-opentype"), url("../../../assets/layout/fonts/roboto-v15-latin-regular.woff2") format("woff2"), url("../../../assets/layout/fonts/roboto-v15-latin-regular.woff") format("woff"), url("../../../assets/layout/fonts/roboto-v15-latin-regular.ttf") format("truetype"), url("../../../assets/layout/fonts/roboto-v15-latin-regular.svg#Roboto") format("svg");
+  src: local("Roboto"), local("Roboto-Regular"), url("/../../../assets/layout/fonts/roboto-v15-latin-regular.eot#iefix") format("embedded-opentype"), url("/../../../assets/layout/fonts/roboto-v15-latin-regular.woff2") format("woff2"), url("/../../../assets/layout/fonts/roboto-v15-latin-regular.woff") format("woff"), url("/../../../assets/layout/fonts/roboto-v15-latin-regular.ttf") format("truetype"), url("/../../../assets/layout/fonts/roboto-v15-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-700 - latin */
@@ -39,18 +39,18 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../../../assets/layout/fonts/roboto-v15-latin-700.eot");
+  src: url("/../../../assets/layout/fonts/roboto-v15-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../../../assets/layout/fonts/roboto-v15-latin-700.eot#iefix") format("embedded-opentype"), url("../../../assets/layout/fonts/roboto-v15-latin-700.woff2") format("woff2"), url("../../../assets/layout/fonts/roboto-v15-latin-700.woff") format("woff"), url("../../../assets/layout/fonts/roboto-v15-latin-700.ttf") format("truetype"), url("../../../assets/layout/fonts/roboto-v15-latin-700.svg#Roboto") format("svg");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/../../../assets/layout/fonts/roboto-v15-latin-700.eot#iefix") format("embedded-opentype"), url("/../../../assets/layout/fonts/roboto-v15-latin-700.woff2") format("woff2"), url("/../../../assets/layout/fonts/roboto-v15-latin-700.woff") format("woff"), url("/../../../assets/layout/fonts/roboto-v15-latin-700.ttf") format("truetype"), url("/../../../assets/layout/fonts/roboto-v15-latin-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url("../../../assets/layout/fonts/MaterialIcons-Regular.eot");
+  src: url("/../../../assets/layout/fonts/MaterialIcons-Regular.eot");
   /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../../../assets/layout/fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../../../assets/layout/fonts/MaterialIcons-Regular.woff") format("woff"), url("../../../assets/layout/fonts/MaterialIcons-Regular.ttf") format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("/../../../assets/layout/fonts/MaterialIcons-Regular.woff2") format("woff2"), url("/../../../assets/layout/fonts/MaterialIcons-Regular.woff") format("woff"), url("/../../../assets/layout/fonts/MaterialIcons-Regular.ttf") format("truetype");
 }
 .splash-screen {
   width: 100%;
@@ -964,7 +964,7 @@
   }
 }
 .login-body {
-  background-image: url("../../../assets/layout/images/login/login-bg.jpg");
+  background-image: url("/../../../assets/layout/images/login/login-bg.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1042,7 +1042,7 @@
   background-size: cover;
 }
 .exception-body.error {
-  background-image: url("../../../assets/layout/images/exception/error-bg.jpg");
+  background-image: url("/../../../assets/layout/images/exception/error-bg.jpg");
 }
 .exception-body.error .exception-panel .exception-code {
   background-color: #e91e63;
@@ -1054,7 +1054,7 @@
   background-color: #e91e63;
 }
 .exception-body.notfound {
-  background-image: url("../../../assets/layout/images/exception/notfound-bg.jpg");
+  background-image: url("/../../../assets/layout/images/exception/notfound-bg.jpg");
 }
 .exception-body.notfound .exception-panel .exception-code {
   background-color: #e91e63;
@@ -1066,7 +1066,7 @@
   background-color: #e91e63;
 }
 .exception-body.accessdenied {
-  background-image: url("../../../assets/layout/images/exception/access-bg.jpg");
+  background-image: url("/../../../assets/layout/images/exception/access-bg.jpg");
 }
 .exception-body.accessdenied .exception-panel .exception-code {
   background-color: #ffb300;
@@ -1222,7 +1222,7 @@
   font-size: 48px;
 }
 .landing-body #introduction > div {
-  background: url("../../../assets/layout/images/landing/landing-header.png");
+  background: url("/../../../assets/layout/images/landing/landing-header.png");
   min-height: 400px;
   color: #ffffff;
   text-align: center;

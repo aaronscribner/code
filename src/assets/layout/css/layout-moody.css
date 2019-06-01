@@ -19,9 +19,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/roboto-v15-latin-300.eot");
+  src: url("/../fonts/roboto-v15-latin-300.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v15-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v15-latin-300.woff2") format("woff2"), url("../fonts/roboto-v15-latin-300.woff") format("woff"), url("../fonts/roboto-v15-latin-300.ttf") format("truetype"), url("../fonts/roboto-v15-latin-300.svg#Roboto") format("svg");
+  src: local("Roboto Light"), local("Roboto-Light"), url("/../fonts/roboto-v15-latin-300.eot?#iefix") format("embedded-opentype"), url("/../fonts/roboto-v15-latin-300.woff2") format("woff2"), url("/../fonts/roboto-v15-latin-300.woff") format("woff"), url("/../fonts/roboto-v15-latin-300.ttf") format("truetype"), url("/../fonts/roboto-v15-latin-300.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-regular - latin */
@@ -29,9 +29,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v15-latin-regular.eot");
+  src: url("/../fonts/roboto-v15-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v15-latin-regular.eot#iefix") format("embedded-opentype"), url("../fonts/roboto-v15-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v15-latin-regular.woff") format("woff"), url("../fonts/roboto-v15-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v15-latin-regular.svg#Roboto") format("svg");
+  src: local("Roboto"), local("Roboto-Regular"), url("/../fonts/roboto-v15-latin-regular.eot#iefix") format("embedded-opentype"), url("/../fonts/roboto-v15-latin-regular.woff2") format("woff2"), url("/../fonts/roboto-v15-latin-regular.woff") format("woff"), url("/../fonts/roboto-v15-latin-regular.ttf") format("truetype"), url("/../fonts/roboto-v15-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* roboto-700 - latin */
@@ -39,18 +39,18 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v15-latin-700.eot");
+  src: url("/../fonts/roboto-v15-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v15-latin-700.eot#iefix") format("embedded-opentype"), url("../fonts/roboto-v15-latin-700.woff2") format("woff2"), url("../fonts/roboto-v15-latin-700.woff") format("woff"), url("../fonts/roboto-v15-latin-700.ttf") format("truetype"), url("../fonts/roboto-v15-latin-700.svg#Roboto") format("svg");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/../fonts/roboto-v15-latin-700.eot#iefix") format("embedded-opentype"), url("/../fonts/roboto-v15-latin-700.woff2") format("woff2"), url("/../fonts/roboto-v15-latin-700.woff") format("woff"), url("/../fonts/roboto-v15-latin-700.ttf") format("truetype"), url("/../fonts/roboto-v15-latin-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/MaterialIcons-Regular.eot");
+  src: url("/../fonts/MaterialIcons-Regular.eot");
   /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("/../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("/../fonts/MaterialIcons-Regular.woff") format("woff"), url("/../fonts/MaterialIcons-Regular.ttf") format("truetype");
 }
 .splash-screen {
   width: 100%;
@@ -964,7 +964,7 @@
   }
 }
 .login-body {
-  background-image: url("../images/login/login-bg.jpg");
+  background-image: url("/../images/login/login-bg.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1042,7 +1042,7 @@
   background-size: cover;
 }
 .exception-body.error {
-  background-image: url("../images/exception/error-bg.jpg");
+  background-image: url("/../images/exception/error-bg.jpg");
 }
 .exception-body.error .exception-panel .exception-code {
   background-color: #e91e63;
@@ -1054,7 +1054,7 @@
   background-color: #e91e63;
 }
 .exception-body.notfound {
-  background-image: url("../images/exception/notfound-bg.jpg");
+  background-image: url("/../images/exception/notfound-bg.jpg");
 }
 .exception-body.notfound .exception-panel .exception-code {
   background-color: #e91e63;
@@ -1066,7 +1066,7 @@
   background-color: #e91e63;
 }
 .exception-body.accessdenied {
-  background-image: url("../images/exception/access-bg.jpg");
+  background-image: url("/../images/exception/access-bg.jpg");
 }
 .exception-body.accessdenied .exception-panel .exception-code {
   background-color: #ffb300;
@@ -1222,7 +1222,7 @@
   font-size: 48px;
 }
 .landing-body #introduction > div {
-  background: url("../images/landing/landing-header.png");
+  background: url("/../images/landing/landing-header.png");
   min-height: 400px;
   color: #ffffff;
   text-align: center;
@@ -1671,7 +1671,7 @@ a:hover {
   -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
-  background-image: url("../images/special/bg-moody-light.png");
+  background-image: url("/../images/special/bg-moody-light.png");
   background-size: 240px 100%;
   background-repeat: no-repeat;
 }
@@ -1910,7 +1910,7 @@ a:hover {
 }
 .layout-wrapper .layout-sidebar.layout-sidebar-dark {
   background-color: #202d35;
-  background-image: url("../images/special/bg-moody-dark.png");
+  background-image: url("/../images/special/bg-moody-dark.png");
 }
 .layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-menu li > a {
   color: #dee0e3;
@@ -2814,7 +2814,7 @@ a:hover {
     top: 64px;
     left: 0;
     z-index: 99;
-    background-image: url("../images/special/bg-moody-light-horizontal.png");
+    background-image: url("/../images/special/bg-moody-light-horizontal.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-color: #080A10;
@@ -2953,7 +2953,7 @@ a:hover {
   }
   .layout-wrapper.layout-menu-horizontal .layout-sidebar.layout-sidebar-dark {
     background-color: #0e161e;
-    background-image: url("../images/special/bg-moody-dark-horizontal.png");
+    background-image: url("/../images/special/bg-moody-dark-horizontal.png");
     background-color: #0A1118;
   }
   .layout-wrapper.layout-menu-horizontal .layout-sidebar.layout-sidebar-dark .layout-menu > li > a:hover {

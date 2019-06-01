@@ -43,7 +43,7 @@ a {
         @include shadow(3px 0 6px rgba(0, 0, 0, 0.3));
 
         @if variable-exists(menuBgImageLight) {
-            background-image: url("../images/special/#{$menuBgImageLight}");
+            background-image: url("/../images/special/#{$menuBgImageLight}");
             background-size: 240px 100%;
             background-repeat: no-repeat;
         }
@@ -321,7 +321,7 @@ a {
             background-color: $darkSidebarBgColor;
 
             @if variable-exists(menuBgImageDark) {
-                background-image: url("../images/special/#{$menuBgImageDark}");
+                background-image: url("/../images/special/#{$menuBgImageDark}");
             }
 
             .layout-menu {
@@ -1430,7 +1430,7 @@ a {
                 z-index: 99;
 
                 @if variable-exists(horizontalMenuBgImageLight) {
-                    background-image: url("../images/special/#{$horizontalMenuBgImageLight}");
+                    background-image: url("/../images/special/#{$horizontalMenuBgImageLight}");
                     background-size: auto;
                     background-repeat: no-repeat;
                     background-color: $horizontalMenuBgColor;
@@ -1617,7 +1617,7 @@ a {
                     background-color: $horizontalDarkSubmenuBgColor;
 
                     @if variable-exists(horizontalMenuBgImageDark) {
-                        background-image: url("../images/special/#{$horizontalMenuBgImageDark}");
+                        background-image: url("/../images/special/#{$horizontalMenuBgImageDark}");
                         background-color: $horizontalDarkMenuBgColor;
                     }
 
