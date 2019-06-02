@@ -30,27 +30,8 @@ export class MenuComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.model = [
-      { label: 'Dashboard', icon: 'dashboard', routerLink: ['/'] },
-      {
-        label: 'Diet', icon: 'settings',
-        items: [
-          { label: 'Goals', icon: 'calendar', routerLink: ['/diet/consumptions'] },
-          { label: 'Logs', icon: 'calendar', routerLink: ['/diet/logs'] },
-          { label: 'Foods', icon: 'calendar', routerLink: ['/diet/foods'] },
-          { label: 'Meals', icon: 'calendar', routerLink: ['/diet/meals'] },
-          { label: 'Recipes', icon: 'calendar', routerLink: ['/diet/recipes'] },
-        ]
-      },
-      {
-        label: 'Training', icon: 'palette',
-        items: [
-          { label: 'Goals', icon: 'calendar', routerLink: ['/training/consumptions'] },
-          { label: 'Logs', icon: 'calendar', routerLink: ['/training/logs'] },
-          { label: 'Exercises', icon: 'calendar', routerLink: ['/training/exercises'] },
-          { label: 'Workouts', icon: 'calendar', routerLink: ['/training/workouts'] },
-        ]
-      },
-      { label: 'Schedule', icon: 'calendar', routerLink: ['/schedules'] },
+      { label: 'Dynamic Questionnaire', icon: 'dashboard', routerLink: ['/'] },
+      { label: 'Angular DDD', icon: 'dashboard', routerLink: ['/'] }
     ];
   }
 }

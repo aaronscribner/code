@@ -1,5 +1,5 @@
 import { environment } from '../../../../environments/environment';
-import { HttpVerbs } from '../../../config/enums/http-verbs.enum';
+import { HttpVerb } from '../../../config/enums/http-verbs.enum';
 import { ResourceConfig } from '../../../config/models/resource-config.model';
 import { ResourceUrlService } from './resource-url.service';
 import { TestBed } from '@angular/core/testing';
@@ -30,7 +30,7 @@ describe('ResourceUrlService', () => {
     it('should return the specific version for a given verb if defined', () => {
       environment.resourceEnvironment = 'local-dev';
 
-      const resultUri = sut.resourceUrl('Employee', HttpVerbs.GET);
+      const resultUri = sut.resourceUrl('Employee', HttpVerb.GET);
 
       expect(resultUri).toEqual(`${BaseUri}/consultants`);
     });
@@ -38,7 +38,7 @@ describe('ResourceUrlService', () => {
     it('should return the default version for a given verb if undefined', () => {
       environment.resourceEnvironment = 'local-dev';
 
-      const resultUri = sut.resourceUrl('Employee', HttpVerbs.POST);
+      const resultUri = sut.resourceUrl('Employee', HttpVerb.POST);
 
       expect(resultUri).toEqual(`${BaseUri}/consultants`);
     });
@@ -46,7 +46,7 @@ describe('ResourceUrlService', () => {
     it('should return undefined for the URI if the configuration is incorrect', () => {
       environment.resourceEnvironment = 'local-dev';
 
-      const resultUri = sut.resourceUrl('Something', HttpVerbs.GET);
+      const resultUri = sut.resourceUrl('Something', HttpVerb.GET);
 
       expect(resultUri).toEqual(undefined);
     });
@@ -56,7 +56,7 @@ describe('ResourceUrlService', () => {
     it('should return the specific version for a given verb if defined', () => {
       environment.resourceEnvironment = 'local-mock';
 
-      const resultUri = sut.resourceUrl('Employee', HttpVerbs.GET);
+      const resultUri = sut.resourceUrl('Employee', HttpVerb.GET);
 
       expect(resultUri).toEqual(`${BaseUri}/api/employees`);
     });
@@ -64,7 +64,7 @@ describe('ResourceUrlService', () => {
     it('should return the default version for a given verb if undefined', () => {
       environment.resourceEnvironment = 'local-mock';
 
-      const resultUri = sut.resourceUrl('Employee', HttpVerbs.POST);
+      const resultUri = sut.resourceUrl('Employee', HttpVerb.POST);
 
       expect(resultUri).toEqual(`${BaseUri}/api/employees`);
     });
@@ -72,7 +72,7 @@ describe('ResourceUrlService', () => {
     it('should return undefined for the URI if the configuration is incorrect', () => {
       environment.resourceEnvironment = 'local-mock';
 
-      const resultUri = sut.resourceUrl('Something', HttpVerbs.GET);
+      const resultUri = sut.resourceUrl('Something', HttpVerb.GET);
 
       expect(resultUri).toEqual(undefined);
     });

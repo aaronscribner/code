@@ -137,11 +137,11 @@
   "defaultProject": "social-fitness-cli",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "sf",
+      "prefix": "app",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "sf"
+      "prefix": "app"
     }
   }
 }

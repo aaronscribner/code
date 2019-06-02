@@ -10,29 +10,9 @@ export const routes: Routes = [
     redirectTo: 'dashboard'
   },
   {
-    path: 'login',
-    component: FullScreenLayoutComponent,
-    loadChildren: './login/login.module#LoginModule',
-  },
-  {
-    path: 'register',
-    component: FullScreenLayoutComponent,
-    loadChildren: './registration/registration.module#RegistrationModule',
-  },
-  {
     path: 'dashboard',
     component: DefaultLayoutComponent,
     loadChildren: './dashboard/dashboard.module#DashboardModule',
-  },
-  {
-    path: 'training',
-    component: DefaultLayoutComponent,
-    loadChildren: './expenditures/expenditures.module#ExpendituresModule',
-  },
-  {
-    path: 'schedule',
-    component: DefaultLayoutComponent,
-    loadChildren: './schedules/schedules.module#SchedulesModule',
   }
 ];
 

@@ -79,35 +79,16 @@ import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
 
 import { AppRoutingModule } from './app-routing.module';
-import { LoginModule } from './login/login.module';
 import { LayoutModule } from './layout/layout.module';
-import { SchedulesModule } from './schedules/schedules.module';
-import { ExercisesModule } from './exercises/exercises.module';
-import { FoodsModule } from './foods/foods.module';
-import { MealsModule } from './meals/meals.module';
-import { RecipesModule } from './recipes/recipes.module';
-import { WorkoutsModule } from './workouts/workouts.module';
-import { LogsModule } from './logs/logs.module';
-import { ExpendituresModule } from './expenditures/expenditures.module';
 
 @NgModule({
   imports: [
-    LoginModule,
     LayoutModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-
-    ExercisesModule,
-    ExpendituresModule,
-    FoodsModule,
-    LogsModule,
-    MealsModule,
-    RecipesModule,
-    SchedulesModule,
-    WorkoutsModule,
 
     AccordionModule,
     AutoCompleteModule,
