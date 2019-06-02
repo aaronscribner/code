@@ -30,8 +30,9 @@ export class MenuComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.model = [
-      { label: 'Dynamic Questionnaire', icon: 'dashboard', routerLink: ['/'] },
-      { label: 'Angular DDD', icon: 'dashboard', routerLink: ['/'] }
+      { label: 'Questionnaire', icon: 'dashboard', routerLink: ['/'] },
+      { label: 'Angular DDD', icon: 'dashboard', routerLink: ['/'] },
+      { label: 'Component Table', icon: 'dashboard', routerLink: ['/'] }
     ];
   }
 }
