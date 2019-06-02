@@ -16,4 +16,4 @@ export const routes: Routes = [
   }
 ];
 
-export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' });
+export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, scrollPositionRestoration: 'enabled' });
