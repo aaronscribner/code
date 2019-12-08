@@ -40,3 +40,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+pizza-pie/.idea
+pizza-pie/node_modules
