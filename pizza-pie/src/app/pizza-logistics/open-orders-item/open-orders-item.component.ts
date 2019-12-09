@@ -24,9 +24,9 @@ export class OpenOrdersItemComponent {
   public getToppings(): string {
     let toppings = '';
 
-    if (this.order.toppings == null
+    if (this.order.toppings
         || this.order.toppings.length === 0
-        || this.toppings == null
+        || this.toppings
         || this.toppings.length === 0) {
       return '';
     }

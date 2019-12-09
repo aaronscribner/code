@@ -100,7 +100,7 @@ export class PizzaLogisticsComponent implements OnInit, OnDestroy {
   private subscribeOrders(): void {
     this.subscriptions.add(this.pizzaLogisticsService.getOrders().subscribe(
       data => {
-        if (data !== null) {
+        if (data) {
           const openPizzaOrders = data.filter(x => x.state === PizzaState.open);
           const readyPizzaOrders = data.filter(x => x.state === PizzaState.ready);
           const deliveredPizzaOrders = data.filter(x => x.state === PizzaState.delivered);
